@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CSE135 Team Website</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="favico2/favicon.ico">
+        <style>
+            body {
+                background-color: rgb(254, 253, 242);
+            }
+
+            .navbar {
+                overflow: hidden;
+                background-color: #333;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                padding-top: 14px;
+            }
+
+
+            .navbar a:last-child {
+                float: right;
+                margin-right: 120px;
+                color: rgb(36, 200, 173);
+            }
+
+            .navbar a {
+                float: left;
+                display: block;
+                color: white;
+                padding: 15px 37px;
+                font-size: 21px;
+            }
+
+            .dropdown-content a:nth-child(3) {
+                color: white;
+            }
+
+            .navbar a:hover {
+                background: rgb(36, 200, 173);
+                color: white;
+            }
+
+            .main,
+            .teamInfo {
+                margin-top: 200px;
+                text-align: center;
+            }
+
+            .dropdown .dropbtn {
+                background-color: #333;
+            }
+
+            .dropbtn {
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+
+            .dropdown-content {
+                display: none;
+                background-color: rgb(36, 200, 173);
+                min-width: 160px;
+                z-index: 999;
+            }
+
+
+
+            .dropdown-content a {
+                color: white;
+                padding: 12px 16px;
+                display: block;
+            }
+
+
+
+            .dropdown-content a:hover {
+                background-color: rgb(36, 200, 173);
+            }
+
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            .dropbtn:hover {
+                background-color: rgb(36, 200, 173);
+            }
+
+
+            table {
+
+                width: 80%;
+                border-collapse: collapse;
+                margin: 0 auto;
+                margin-top: 100px;
+            }
+
+            td {
+                border: 1px solid black;
+                padding: 10px;
+                vertical-align: top;
+            }
+
+            img {
+                display: block;
+                margin: 0 auto;
+                max-width: 100%;
+                height: auto;
+            }
+
+
+            html {
+                box-sizing: border-box;
+            }
+
+            *,
+            *:before,
+            *:after {
+                box-sizing: inherit;
+            }
+
+
+            .column {
+                float: left;
+                width: 20%;
+                margin-bottom: 16px;
+                padding: 50s 40px;
+                margin-left: 150px;
+            }
+
+
+            .container {
+                padding: 0 16px;
+            }
+
+            .container::after,
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            .title {
+                color: grey;
+            }
+
+            .card {
+                background-color: white;
+            }
+
+            .button {
+                border: none;
+                outline: 0;
+                display: inline-block;
+                padding: 8px;
+                color: white;
+                background-color: #000;
+                text-align: center;
+                width: 100%;
+            }
+
+            .button:hover {
+                background-color: rgb(36, 200, 173);
+            }
+        </style>
+    </head>
+
+    <body>
+
+
+        <div class="navbar">
+            <a href="#empty"><i><b>CSE135<br>SP23</b></i></a>
+            <a href="#assignments">Assignments</a>
+            <div class="dropdown">
+                <button class="dropbtn">About</button>
+                <div class="dropdown-content">
+                    <a href="https://starlit-tulumba-ece94b.netlify.app/">Yiran Wan</a>
+                    <a href="https://yyweng.github.io/Personalweb/">Yiyu Weng</a>
+                    <a href="https://kristinshuyihan.github.io/CSE135OnlDataAnalys-Appli/#Contact">Shuyi Han</a>
+                </div>
+            </div>
+            <a href="#contact">Contact</a>
+        </div>
+        <div id="empty">
+            <br><br><br><br><br>
+        </div>
+        <div class="main" id="assignments">
+            <h1>Our Assignments</h1>
+            <h4>We are three girls from UCSD. We form a team to study and do homework <br>together
+                for CSE135, Online Database Analytics & Application.<br> Here are our class
+                assignments.
+            </h4>
+        </div>
+
+        <div class="assignments">
+            <table>
+                <tr>
+                    <td>
+                        <h3>HW 1 - Client Side Basics, Site and Server Configuration</h3>
+                        <p>Our domain website has</p>
+                        <ul>
+                            <li>homepage with team member info and homework links</li>
+                            <li>about pages for each team member</li>
+                            <li>favicon</li>
+                            <li>robots.txt</li>
+                            <li>hw1/hello.php</li>
+                            <li>hw1/report.html</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h3>HW 2 - </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                        <h3>HW 3 - </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </td>
+                    <td>
+                        <h3>HW 4 - </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="teamInfo">
+            <h1>Info of Team Members</h1>
+            <h4>We are three girls who are passionate about web development
+            </h4>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="/ProfilePics/yiran.png" alt="Yiran's Profile" style="width:100%">
+                    <div class="container">
+                        <h2>Yiran Wan</h2>
+                        <p class="title">Contributor</p>
+                        <p>UCSD 2024, Math-CS, Mobile/Web development & Design</p>
+                        <p>y3wan@ucsd.edu</p>
+                        <p><button class="button" onclick="alert('y3wan@ucsd.edu')">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="ProfilePics/yiyu.jpeg" alt="Yiyu's profile" id="contact" style="width:100%">
+                    <div class="container">
+                        <h2>Yiyu Weng</h2>
+                        <p class="title">Contributor</p>
+                        <p>UCSD 2024, Math-CS, Mobile/Web development & Design</p>
+                        <p>yweng@ucsd.edu</p>
+                        <p><button class="button" onclick="alert('yweng@ucsd.edu')">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="/ProfilePics/shuyi.JPG" alt="Shuyi's profile" style="width:100%">
+                    <div class="container">
+                        <h2>Shuyi Han</h2>
+                        <p class="title">Contributor</p>
+                        <p>UCSD 2024, Cogs Design&Interaction, Mobile /Web development & Design</p>
+                        <p>shh020@ucsd.edu</p>
+                        <p><button class="button" onclick="alert('shh020@ucsd.edu')">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
